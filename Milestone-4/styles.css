@@ -1,0 +1,159 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-Page Frame */
+.page-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+    background-color: #e0e4e8;
+    /* Slightly darker background for frame effect */
+}
+
+.page-frame-inner {
+    max-width: 900px;
+    /* Set max-width for the content area */
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    /* Rounded corners for the frame */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Heading Styling */
+h1,
+h2 {
+    color: #2c3e50;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+h1::after,
+h2::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 3px;
+    background-color: #3498db;
+    margin: 10px auto;
+}
+
+/* Form Styling */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #3498db;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Resume Display Section */
+.resume-preview {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.resume-preview p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.resume-preview a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.resume-preview a:hover {
+    text-decoration: underline;
+}
+
+/* Icon Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a i {
+    font-size: 40px;
+    margin-right: 10px;
+    color: #3a60f9;
+}
+
+ul li a:hover i {
+    color: #1736d1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-frame-inner {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}

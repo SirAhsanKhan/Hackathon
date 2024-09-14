@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Editable Resume</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="page-frame">
+            <div class="page-frame-inner">
+                <h1>Live Editable Resume</h1>
+                <div class="form-container">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+
+                    <label for="experience">Experience:</label>
+                    <textarea id="experience" placeholder="Enter your experience"></textarea>
+
+                    <label for="skills">Skills:</label>
+                    <input type="text" id="skills" placeholder="e.g. HTML, CSS, JavaScript">
+                </div>
+
+                <h2>Preview</h2>
+                <div class="resume-preview">
+                    <p><strong>Name:</strong> <span id="display-name">Your Name</span></p>
+                    <p><strong>Email:</strong> <span id="display-email">Your Email</span></p>
+                    <p><strong>Experience:</strong></p>
+                    <p id="display-experience">Your experience goes here.</p>
+                    <p><strong>Skills:</strong> <span id="display-skills">Your skills go here.</span></p>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
